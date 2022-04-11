@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products">Products</a></li>
+            <li><a href="account.html">Subscription</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+        </ul>
+    </nav>
+    {% block body_content %}
+    {% endblock %}
+</body>
+</html>
