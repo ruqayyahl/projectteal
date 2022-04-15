@@ -1,4 +1,22 @@
 {% extends "layout.html" %}
 {% block body_content %}
     <h1>My Account</h1>
+    <form action="action_page.php" style="border:1px solid #ccc">
+        <div class="container">
+            <h3>Welcome Back!<br>Enter your details to sign in.</h3>
+            <hr>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+            <br>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <br>
+            <label>
+                <br>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+            </label>
+            <br>
+        </div>
+    </form>
+    <br>
 {% endblock %}

@@ -1,27 +1,86 @@
-h1 {
+body {
+    background-color: #EAEAEA;
     font-family: 'Titillium Web', sans-serif;
-    background-color: #F5CAC3;
-    font-size: 100px;
-    padding: 5px;
+    color: #005E7C;
 }
 
-ul {
+h1 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 100px;
+    padding: 5px;
+    color: #005E7C;
+    text-align: center;
+    font-weight: normal;
+}
+
+.top-nav {
+    left: 0px;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #005E7C;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.top-nav a {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    overflow: hidden;
-    background-color: F7EDE2;
+    display: inline-block;
+    color: #005E7C;
 }
 
 li {
-    display: inline;
-
-}
-
-a {
-    padding: 35px;
-}
-
-li a {
+    display: inline-block;
+    padding-right: 40px;
+    text-decoration: none;
+    color: #005E7C;
     text-align: center;
+    font-weight: bold;
+}
+
+.message {
+    text-align: center;
+    font-size: 25px;
+}
+
+.container {
+    display: flex;
+    text-align: center;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.center-image {
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.newsletter {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bottom-nav a {
+    text-decoration: none;
+    color: #005E7C;
+    text-align: center;
+}
+
+.copyright {
+    font-size: 15px;
+    text-align: center;
+    font-color: #005E7C;
 }

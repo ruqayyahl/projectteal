@@ -1,22 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
-
-</head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="products">Products</a></li>
-            <li><a href="account.html">My Subscription</a></li>
-            <li><a href="faq.html">FAQs</a></li>
-        </ul>
-    </nav>
-    {% block body_content %}
-    {% endblock %}
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0", maximum-scale="1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='images/pinecone.png') }}"/>
+        <img src="{{ url_for('static', filename='images/banner.png') }}" alt="banner" style="width:100%">
+    </head>
+    <body>
+        <div class="top-nav">
+            <a href="home.html" class="active">TEAL</a>
+            <div id="Links">
+                <a href="about.html">About Us</a>
+                <a href="courses.html">Courses</a>
+                <a href="booking.html">Book a Course</a>
+                <a href="instructors.html">Meet our Team</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+{% block body_content %}
+{% endblock %}
+    </body>
+    <footer>
+        <hr>
+        <div>
+            <label class="newsletter" for="newsletter"><b>Subscribe to our monthly newsletter</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+            <button type="submit" class="signupbtn">Sign Up</button>
+        </div>
+        <br>
+        <div>
+            <a href="https://twitter.com/?lang=en" class="twitter">Twitter</a>
+            <link rel="twitter icon" href="{{ url_for('static', filename='images/twitter.png') }}"/>
+            <a href="#" class="instagram"></a>
+        </div>
+        <br>
+        <div class="bottom-nav">
+            <nav>
+                <ul>
+                    <li><a href ="faq.html"></a>FAQs</li>
+                    <li>Contact Us</li>
+                    <li><a href="account.html">My Account</a></li>
+                </ul>
+            </nav>
+        </div>
+    <p class="copyright">&copy; Teal Box, 2022</p>
+</footer>
 </html>

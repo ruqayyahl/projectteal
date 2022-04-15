@@ -1,5 +1,9 @@
 {% extends "layout.html" %}
 {% block body_content %}
     <h1>Teal Box</h1>
-    <p>teal box is a subscription service meaning you can make sure you are keeping your skin in check every month! </p>
+    <hr width="50%">
+    <p class="message">Teal Box is a body and skin care subscription service making sure you are keeping your skin in check every month! </p>
+    <img src="{{ url_for('static', filename='images/tealbox.png') }}" alt="tealbox"  class="center-image">
+    <br>
+    <br>
 {% endblock %}
