@@ -34,6 +34,11 @@ def contact():
     return render_template('contact.html', title='Contact Us')
 
 
+@app.route('/login')
+def login():
+    return render_template('login.html', title='Login')
+
+
 @app.route('/instructors')
 def instructors():
     return render_template('instructors.html', title='Instructors')
@@ -48,4 +53,13 @@ def faq():
 def admin():
     return render_template('admin.html', title='Confirmed Bookings')
 
+
+@app.route('/account')
+def account():
+    return render_template('account.html', title='Account')
+
+
+@app.route('/signup')
+def signup():
+    return render_template('signup.html', title='Signup')
 
