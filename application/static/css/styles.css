@@ -13,7 +13,8 @@ h1 {
     font-weight: normal;
 }
 
-.top-nav {
+
+.nav {
     left: 0px;
     height: 40px;
     width: 100%;
@@ -23,13 +24,16 @@ h1 {
     font-family: 'Titillium Web', sans-serif;
 }
 
-.top-nav a {
+
+/*
+.nav a {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: inline-block;
     color: #005E7C;
 }
+*/
 
 li {
     display: inline-block;
@@ -71,12 +75,6 @@ p {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-}
-
-.bottom-nav a {
-    text-decoration: none;
-    color: #005E7C;
-    text-align: center;
 }
 
 .copyright {

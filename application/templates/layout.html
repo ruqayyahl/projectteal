@@ -7,55 +7,59 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
         <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="{{ url_for('static', filename='images/pinecone.png') }}"/>
-        <img src="{{ url_for('static', filename='images/banner.png') }}" alt="banner" style="width:100%">
+        <img src="{{ url_for('static', filename='images/test.png') }}" alt="banner" style="width:100%">
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">Teal</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Teal School of Beauty</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
             </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="{{url_for('home')}}">Home <span class="sr-only"></span></a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="{{url_for('about')}}">About Us <span class="sr-only"></span></a>
-              </li><li class="nav-item active">
-                <a class="nav-link" href="{{url_for('instructors')}}">Meet the Team <span class="sr-only"></span></a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="{{url_for('courses')}}">Courses <span class="sr-only"></span></a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="{{url_for('contact')}}">Contact <span class="sr-only"></span></a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="{{url_for('faq')}}">FAQs <span class="sr-only"></span></a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="{{url_for('home')}}">Home</a>
-                  <a class="dropdown-item" href="{{url_for('about')}}">About us</a>
-                  <a class="dropdown-item" href="{{url_for('courses')}}">Course</a>
-                  <a class="dropdown-item" href="{{url_for('instructors')}}">Meet the Team</a>
-                  <a class="dropdown-item" href="{{url_for('faq')}}">FAQs</a>
-                  <a class="dropdown-item" href="{{url_for('contact')}}">Contact</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="{{url_for('home')}}">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{url_for('courses')}}">Courses</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="{{url_for('about')}}">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{url_for('instructors')}}">Meet The Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="{{url_for('contact')}}">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="{{url_for('faq')}}">FAQs</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="{{url_for('home')}}">Home</a></li>
+                    <li><a class="dropdown-item" href="{{url_for('about')}}">About us</a></li>
+                    <li><a class="dropdown-item" href="{{url_for('courses')}}">Courses</a></li>
+                    <li><a class="dropdown-item" href="{{url_for('instructors')}}">Meet the Team</a></li>
+                    <li><a class="dropdown-item" href="{{url_for('faq')}}">FAQs</a></li>
+                    <li><a class="dropdown-item" href="{{url_for('contact')}}">Contact</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
           </div>
         </nav>
+
 {% block body_content %}
 {% endblock %}
 <footer>
